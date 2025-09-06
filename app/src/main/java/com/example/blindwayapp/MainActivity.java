@@ -2,16 +2,12 @@ package com.example.blindwayapp;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 
-import com.example.blindwayapp.ui.HomeFragment;
-import com.example.blindwayapp.ui.ProfileFragment;
-import com.example.blindwayapp.ui.SettingsFragment;
+import com.example.blindwayapp.ui.home.HomeFragment;
+import com.example.blindwayapp.ui.profile.ProfileFragment;
+import com.example.blindwayapp.ui.settings.SettingsFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

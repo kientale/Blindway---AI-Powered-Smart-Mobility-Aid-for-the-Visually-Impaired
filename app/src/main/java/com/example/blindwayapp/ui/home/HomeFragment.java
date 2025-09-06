@@ -1,4 +1,4 @@
-package com.example.blindwayapp.ui;
+package com.example.blindwayapp.ui.home;
 
 import android.os.Bundle;
 
