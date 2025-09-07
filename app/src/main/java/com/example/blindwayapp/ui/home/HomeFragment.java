@@ -13,6 +13,8 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.blindwayapp.R;
 import com.example.blindwayapp.ui.my_locations.MyLocationsFragment;
+import com.example.blindwayapp.ui.search_location.SearchLocationFragment;
+import com.example.blindwayapp.ui.traffic_location.TrafficLocationFragment;
 
 public class HomeFragment extends Fragment {
 
@@ -27,8 +29,10 @@ public class HomeFragment extends Fragment {
 
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
-        // Lấy CardView "Vị trí của tôi"
+        // Lấy CardView
         View cardMyLocation = root.findViewById(R.id.cardMyLocation);
+        View cardSearchLocation = root.findViewById(R.id.cardSearch);
+        View cardTrafficLocation = root.findViewById(R.id.cardTraffic);
 
         // Xử lý sự kiện click
         cardMyLocation.setOnClickListener(v -> {
@@ -37,6 +41,26 @@ public class HomeFragment extends Fragment {
                     .beginTransaction();
 
             transaction.replace(R.id.container, new MyLocationsFragment());
+            transaction.addToBackStack(null); // Cho phép quay lại bằng nút Back
+            transaction.commit();
+        });
+
+        cardSearchLocation.setOnClickListener(v -> {
+            FragmentTransaction transaction = requireActivity()
+                    .getSupportFragmentManager()
+                    .beginTransaction();
+
+            transaction.replace(R.id.container, new SearchLocationFragment());
+            transaction.addToBackStack(null); // Cho phép quay lại bằng nút Back
+            transaction.commit();
+        });
+
+        cardTrafficLocation.setOnClickListener(v -> {
+            FragmentTransaction transaction = requireActivity()
+                    .getSupportFragmentManager()
+                    .beginTransaction();
+
+            transaction.replace(R.id.container, new TrafficLocationFragment());
             transaction.addToBackStack(null); // Cho phép quay lại bằng nút Back
             transaction.commit();
         });
