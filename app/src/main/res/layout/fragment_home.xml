@@ -56,11 +56,12 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tvCurrentLocation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="5dp"
-                    android:text="Đại học công nghệ Đông Á"
+                    android:text="Đang lấy vị trí..."
                     android:textColor="@android:color/darker_gray"
                     android:textSize="15sp" />
             </LinearLayout>
