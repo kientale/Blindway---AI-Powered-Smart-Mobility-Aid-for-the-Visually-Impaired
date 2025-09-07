@@ -42,6 +42,8 @@ dependencies {
     implementation("androidx.gridlayout:gridlayout:1.0.0")
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
+    implementation(libs.camera.view)
+    implementation(libs.camera.lifecycle)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
