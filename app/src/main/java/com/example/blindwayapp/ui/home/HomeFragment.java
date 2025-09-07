@@ -18,8 +18,6 @@ import com.example.blindwayapp.ui.traffic_location.TrafficLocationFragment;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -27,7 +25,7 @@ public class HomeFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
+        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
         // Lấy CardView
         View cardMyLocation = root.findViewById(R.id.cardMyLocation);
