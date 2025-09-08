@@ -126,7 +126,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardMyLocation"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="130dp"
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -160,7 +160,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardNavigation"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="130dp"
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -194,7 +194,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardTraffic"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="130dp"
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
@@ -228,7 +228,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardSearch"
                 android:layout_width="0dp"
-                android:layout_height="160dp"
+                android:layout_height="130dp"
                 android:layout_margin="8dp"
                 android:clickable="true"
                 android:foreground="?attr/selectableItemBackground"
