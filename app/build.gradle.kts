@@ -40,6 +40,10 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.gridlayout:gridlayout:1.0.0")
+    implementation(libs.camera.core)
+    implementation(libs.camera.camera2)   // 🔥 bắt buộc
+    implementation(libs.camera.lifecycle)
+    implementation(libs.camera.view)
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
     implementation(libs.camera.view)
